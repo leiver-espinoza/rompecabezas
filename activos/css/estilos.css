@@ -1,8 +1,11 @@
 /* Formatos para la página */
 
 body {
+    min-width: fit-content;
+    min-height: fit-content;
     /* Ahí luego se le puede cambiar la foto o activar la otra que ya existe */
     /* background-image: url('https://images.pexels.com/photos/5721862/pexels-photo-5721862.jpeg'); */
+
     background-image: url('https://images.pexels.com/photos/6159695/pexels-photo-6159695.jpeg');
     /* background-image: url(''); */
     background-size: cover;
