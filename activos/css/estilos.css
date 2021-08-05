@@ -1,0 +1,104 @@
+/* Formatos para la página */
+
+body {
+    /* Ahí luego se le puede cambiar la foto o activar la otra que ya existe */
+    /* background-image: url('https://images.pexels.com/photos/5721862/pexels-photo-5721862.jpeg'); */
+    background-image: url('https://images.pexels.com/photos/6159695/pexels-photo-6159695.jpeg');
+    /* background-image: url(''); */
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Formatos para la página de inicio */
+
+.cuadro_de_mensajes {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 220px;
+    width: 400px;
+    padding: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#1b1b1b69;
+    text-align: center;
+}
+
+#boton_de_play {
+    width: 100px;
+}
+
+#boton_de_play:hover {
+    animation: sacudir 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sacudir {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Estos son formatos para las fichas, disponibles para varios navegadores
+pero no los detallo mucho pues la verdad, no es necesario */
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Exo', sans-serif;
+    color: #ffffff;
+}
+
+/* Características del tablero, con parámetros fácil de personalizar */
+.tablero_rompecabezas {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-wrap: wrap;
+    background-color: #595c6162;
+    border: 1px solid #627ba1bd;
+}
+
+/* Formato para cada unas de las fichas */
+.ficha {
+    background-color: #0d16259c;
+    font-size: 80px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Este es el formato del "espacio vacio" */
+.espacio_vacio {
+    visibility: hidden;
+}
